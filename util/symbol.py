@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-
-
-import doctest
-
-
 class Symbol(object):
 	"""Unique symbolic values, which may be given an optional name.
 
@@ -38,13 +32,10 @@ class Symbol(object):
 
 
 
-def symbol(obj):
+def issymbol(obj):
 	"""True if parameter is of type Symbol.
-	
+
+	>>> issymbol(Symbol('A'))
+	True
 	"""
 	return isinstance(obj, Symbol)
-
-
-if __name__ == """__main__""":
-
-	doctest.testmod()

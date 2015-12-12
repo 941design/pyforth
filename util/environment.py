@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-
-import doctest
-
-
-
 class Environment(object):
 	"""Associative tree like structure.
 	
@@ -60,8 +54,3 @@ class Environment(object):
 			del(self.bindings[key])
 		else:
 			del(self.parent[key])
-
-
-if __name__ == """__main__""":
-
-	doctest.testmod()
